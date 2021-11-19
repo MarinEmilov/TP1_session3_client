@@ -1,8 +1,7 @@
-body{
-  
-  background-image: url("https://www.actugaming.net/wp-content/uploads/2019/08/world-of-warships-sous-marin.jpg");
-  background-repeat: no-repeat;
-  
+body {
+  /* background-image: url("https://www.actugaming.net/wp-content/uploads/2019/08/world-of-warships-sous-marin.jpg"); */
+  background-image: url("https://www.edrmagazine.eu/wp-content/uploads/2016/10/Cybersecurity-1-2.jpg");
+  /* background-repeat: no-repeat; */
 }
 
 .container {
@@ -10,52 +9,49 @@ body{
   border-radius: 5px;
   margin-top: 15px;
   color: #df1818;
-  
+
+
   /* background-image: url("https://lvdneng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2019/11/07/node_662663/42610537/public/2019/11/07/B9721519003Z.1_20191107191258_000%2BGR1ES2KJ4.2-0.jpg?itok=NfcjLeKi1573150451");
   background-repeat: no-repeat; */
- 
 }
 
-#imgpub{
- border: solid 1px white;
- width: 100px;
- height: 400px; 
- margin-top: -300px;
- margin-left: 10px;
- 
+#imgpub {
+  border: solid 1px white;
+  width: 100px;
+  height: 400px;
+  margin-top: -300px;
+  margin-left: 10px;
 }
 
-.main {  
+.main {
   width: 65%;
   height: 100%;
-  margin: 50px ;
-  
-  display: flex;
-} 
+  margin: 50px;
 
- span{
-  width: 32px;
-  height: 40px;
-  display:inline-flex;
-  border: solid 3px #f8f2f2;
-  
+  display: flex;
 }
 
-.flotte{
+span {
+  width: 32px;
+  height: 40px;
+  display: inline-flex;
+  border: solid 3px #f8f2f2;
+}
+
+.flotte {
   border: solid 1px black;
   /* background-color: rgb(210, 185, 233); */
   padding: 10px 100px;
 }
 
-
 .board-square {
-  border:1px solid black;
+  border: 1px solid black;
   height: 50px;
   width: 50px;
   background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;
-  color:white;
+  color: white;
   font-size: 1.5em;
 }

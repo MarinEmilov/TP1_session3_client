@@ -3,13 +3,13 @@ import "../App.css";
 
 function Square() {
   const c1Style = {
-    backgroundColor: "steelblue",
+    // backgroundColor: "steelblue",
     color: "white",
     
   };
 
   const c2Style = {
-    backgroundColor: "black",
+    backgroundColor: "red",
     color: "white",
   };
 

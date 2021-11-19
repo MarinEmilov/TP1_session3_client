@@ -37,7 +37,9 @@ function Flotte () {
                 // 'width': 100px,
                 'backgroundColor': color[index],
                 'margin':'5px'}}>
-                    <span>bateaux</span>
+                    <span>
+                      
+                    </span>
                 </animated.div>)
                 })}
             
