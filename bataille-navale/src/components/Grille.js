@@ -1,7 +1,59 @@
 import React, { useState } from "react";
 import "../App.css";
 
+import Image from "./Image";
+import { useDrop } from "react-dnd";
+
+
+
+
+const ImageFlotte = [
+  {
+    id: 1,
+    url:"https://www.fetedujeu.org/wp-content/uploads/2018/02/bateau-touche-coule.png"
+  },
+
+  {
+    id: 2,
+    url: "https://www.larousse.fr/encyclopedie/data/images/1005827-Porte-avions_Clemenceau.jpg"
+  },
+
+  {
+    id: 3,
+    url: "https://img.freepik.com/vecteurs-libre/navire-militaire-cuirasse-vapeur-artillerie_101087-192.jpg?size=626&ext=jpg"
+  },
+
+  {
+    id: 4,
+    url: "https://i.pinimg.com/736x/0a/1f/ff/0a1fff60f6afc202f8302157a2d717fc--model-ships-paper-models.jpg"
+  },
+
+]
+
+
+
+
+
 function Square() {
+
+  const [board, setBoard] = useState([]);
+
+  const [{isOver}, drop] = useDrop(() => ({
+    accept:"image",
+    drop: (item) => addImageToBoard(item.id),
+    collect: (monitor) => ({
+      isOver: !!monitor.isOver(),
+  }),
+  }));
+
+  const addImageToBoard = (id) => {
+    const imageList = ImageFlotte.filter((image) => id == image.id);
+    setBoard((board) => [...board, imageList[0]]);
+  };
+
+
+
+
   const c1Style = {
     // backgroundColor: "steelblue",
     color: "white",
@@ -14,7 +66,14 @@ function Square() {
   };
 
   const [color, setColor] = useState(c1Style);
-  return <span style={color} onClick={() => setColor(c2Style)}></span>;
+  return (
+    <>
+      <span style={color} onClick={() => setColor(c2Style)} className="Board" ref={drop}>
+        {board.map((image) => {
+          return <Image url={image.url} id={image.id} />;          
+        })}</span>
+  
+  </>);
 }
 
 function Grid({ grid }) {

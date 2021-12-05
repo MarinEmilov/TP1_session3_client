@@ -50,10 +50,10 @@ function Flotte () {
           return <Image url={image.url} id={image.id} />
          })}
         </div>
-        <div className="Board" ref={drop}>
+        {/* <div className="Board" ref={drop}>
           {board.map((image) => {
           return <Image url={image.url} id={image.id} />
-        })}</div>
+        })}</div> */}
 
       </>
     )};

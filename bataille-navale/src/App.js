@@ -50,9 +50,7 @@ class App extends Component {
         {/* <Navbar /> */}
         <div class="container">
         <Component1/>
-          <div class="main">
-
-           
+          <div class="main">           
                 <Flotte />
                 {this.state.grid !== null && <Grid grid={this.state.grid} />}
                 <br />
