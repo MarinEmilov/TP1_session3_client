@@ -1,7 +1,7 @@
 body {
   /* background-image: url("https://www.actugaming.net/wp-content/uploads/2019/08/world-of-warships-sous-marin.jpg"); */
-  background-image: url("https://www.edrmagazine.eu/wp-content/uploads/2016/10/Cybersecurity-1-2.jpg");
-  /* background-repeat: no-repeat; */
+ background-image: url("https://www.edrmagazine.eu/wp-content/uploads/2016/10/Cybersecurity-1-2.jpg" );
+ /*  backgro und-repeat: no-repeat; */
 }
 
 .container {
@@ -27,25 +27,20 @@ body {
   width: 65%;
   height: 100%;
   margin: 50px;
-
   display: flex;
 }
 
 span {
   width: 32px;
-  height: 40px;
+  height: 35px;
   display: inline-flex;
-  border: solid 3px #f8f2f2;
+  border: solid 2px hsl(0, 78%, 52%);
+ margin-left: 1px;
 }
 
-.flotte {
-  border: solid 1px black;
-  /* background-color: rgb(210, 185, 233); */
-  padding: 10px 100px;
-}
 
 .board-square {
-  border: 1px solid black;
+  border: 2px solid black;
   height: 50px;
   width: 50px;
   background-color: red;
@@ -54,4 +49,8 @@ span {
   justify-content: center;
   color: white;
   font-size: 1.5em;
+}
+
+img{
+  margin: 5px;
 }

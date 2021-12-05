@@ -7,6 +7,8 @@ import Pub from "./components/Pub.js";
 import Grid2 from "./components/Grille2.js";
 import Component1 from "./components/Component1";
 import Flotte from "./components/Flotte";
+import {DndProvider}from 'react-dnd';
+import {HTML5Backend} from 'react-dnd-html5-backend'
 
 
 class App extends Component {
@@ -41,7 +43,7 @@ class App extends Component {
   render() {
     return (
       <body>
-      
+       <DndProvider backend={HTML5Backend}>
         <header class="container fluid text-center">
           <h1>BATAILLE NAVALE</h1>
         </header>
@@ -49,12 +51,15 @@ class App extends Component {
         <div class="container">
         <Component1/>
           <div class="main">
-            <Flotte />
-            {this.state.grid !== null && <Grid grid={this.state.grid} />}
-            <br />
-            {this.state.grid !== null && <Grid2 grid={this.state.grid} />}
-          </div>
-        </div>
+
+           
+                <Flotte />
+                {this.state.grid !== null && <Grid grid={this.state.grid} />}
+                <br />
+                {this.state.grid !== null && <Grid2 grid={this.state.grid} />}
+              </div>
+            </div>
+        </DndProvider>
         <Pub />
       </body>
     );
