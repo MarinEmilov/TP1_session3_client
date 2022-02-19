@@ -1,0 +1,33 @@
+.container-jeu {
+  background: url(../public/imag_jeu.jpg);
+  
+}
+
+.container {
+  border: black 1px solid;
+  border-radius: 5px;
+  margin-top: 15px;
+  color: #df1818;
+ 
+}
+.main {
+   width: auto;
+   height: 740px;
+   margin: auto;
+   display: flex;
+  
+}
+
+// .Board {
+//   width: 50px;
+//   height: 50px;
+//   display: inline-block;
+//   border: solid 2px hsl(0, 78%, 52%);
+//   object-fit: cover;  
+// }
+
+
+
+img {
+  margin: 5px;
+}
